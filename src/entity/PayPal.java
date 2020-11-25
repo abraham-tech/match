@@ -1,4 +1,4 @@
-package match.src.entity;
+package entity;
 import interfaces.IPayment;
 
 public class PayPal implements IPayment{

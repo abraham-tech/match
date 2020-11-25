@@ -6,4 +6,7 @@ public class Requester extends User{
         super(name, email);
     }
     
+    public void updateServiceRequestStatus(StatusService.Status status, ServiceRequest sr) {
+        sr.setStatus(status);
+    }
 }

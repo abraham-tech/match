@@ -26,4 +26,11 @@ public class Responder extends User {
     public ArrayList<Category> getCategories() {
         return this.categories;
     }
+
+    public void accept(ServiceRequest sr) {
+        this.acceptedServiceRequests.add(sr);
+    }
+    public void decline(ServiceRequest sr) {
+        this.declinedServiceRequests.add(sr);
+    }
 }
