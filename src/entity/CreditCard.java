@@ -1,5 +1,6 @@
-package match.src.entity;
-import match.src.interfaces.IPayment;
+package entity;
+
+import interfaces.IPayment;
 
 public class CreditCard implements IPayment{
     private String account;
