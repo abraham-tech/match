@@ -4,11 +4,14 @@ public class User {
     private String email;
     private String name;
     private String phone;
-    private String role;
+    private boolean isActive;
+
+    protected String role;
 
     public User(String name, String email) {
         this.name = name;
         this.email = email;
+        this.isActive = true;
     }
 
     public String getEmail() {
@@ -22,5 +25,13 @@ public class User {
     }
     public String getRole() {
         return this.role;
+    }
+
+    public void setActive(boolean active) {
+        this.isActive = active;
+    }
+
+    public boolean isActive() {
+        return this.isActive;
     }
 }

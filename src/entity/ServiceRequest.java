@@ -11,6 +11,7 @@ public class ServiceRequest {
     private Image image;
     private Category category;
     private StatusService statusService;
+    private Pay paymentService;
     
     
     public StatusService.Status status;
@@ -18,6 +19,7 @@ public class ServiceRequest {
     public ServiceRequest(Requester requester, String name) {
         this.requester = requester;
         this.name = name;
+        this.paymentService = new Pay();
     }
 
     public String getName() {
@@ -31,5 +33,9 @@ public class ServiceRequest {
 
     public StatusService.Status getStatus() {
         return this.status;
+    }
+
+    public void pay(int amount, Pay.Method method) {
+        this.paymentService.pay(amount, method);
     }
 }

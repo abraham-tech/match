@@ -34,3 +34,4 @@ public class Responder extends User {
         this.declinedServiceRequests.add(sr);
     }
 }
+

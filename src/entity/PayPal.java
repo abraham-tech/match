@@ -7,6 +7,7 @@ public class PayPal implements IPayment{
 
     @Override
     public boolean pay(int amount){
+        System.out.println("Paid " + amount + " via Paypal");
         return true;
     }
     
